@@ -38,280 +38,485 @@
 					</h1>
 				</div>
 				<div class="main-info__head-tags">
-					<a href="#" class="active" data-filter="all">
+					<button class="active" data-filter="all">
 						<img src="img/icon-all.svg" alt="">
 						Все
 						<span>250</span>
-					</a>
-					<a href="#" data-filter=".category-a">Сайты<span>25</span></a>
-					<a href="#" data-filter=".category-b">Лендинги<span>120</span></a>
-					<a href="#">Магазины<span>12</span></a>
-					<a href="#">Строительство<span>12</span></a>
-					<a href="#">Красота и здоровье<span>4</span></a>
-					<a href="#">Мода<span>4</span></a>
-					<a href="#">Инфобизнес<span>3</span></a>
-					<a href="#">Haier</a>
-					<a href="#">Microsoft</a>
-					<a href="#">Фабрика Предпринимательства<span>2</span></a>
-					<a href="#">Рыбаков Фонд<span>1</span></a>
-					<a href="#">B2b<span>50</span></a>
-					<a href="#">B2c<span>10</span></a>
-					<a href="#">
+					</button>
+					<button data-filter=".category-a">Сайты<span>25</span></button>
+					<button data-filter=".category-b">Лендинги<span>120</span></button>
+					<button>Магазины<span>12</span></button>
+					<button>Строительство<span>12</span></button>
+					<button>Красота и здоровье<span>4</span></button>
+					<button>Мода<span>4</span></button>
+					<button>Инфобизнес<span>3</span></button>
+					<button>Haier</button>
+					<button>Microsoft</button>
+					<button>Фабрика Предпринимательства<span>2</span></button>
+					<button>Рыбаков Фонд<span>1</span></button>
+					<button>B2b<span>50</span></button>
+					<button>B2c<span>10</span></button>
+					<button>
 						<img src="img/icon-archive.svg" alt="">
 						Архив
 						<span>20</span>
-					</a>
+					</button>
 				</div>
 			</div>
 		</div>
+
 		<div class="main-info__body">
-			<a href="#" class="main-info__link mix category-a" data-order="1">
-				<img src="img/items/item-1.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="1">
-				<img src="img/items/item-2.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="2">
-				<img src="img/items/item-3.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="2">
-				<img src="img/items/item-4.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-b" data-order="2">
-				<img src="img/items/item-5.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-a" data-order="3">
-				<img src="img/items/item-6.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
 
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="1">
-				<img src="img/items/item-2.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="2">
-				<img src="img/items/item-3.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="2">
-				<img src="img/items/item-4.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="1">
-				<img src="img/items/item-1.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-a" data-order="3">
-				<img src="img/items/item-6.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
 
-			<a href="#" class="main-info__link mix category-b" data-order="2">
-				<img src="img/items/item-5.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="1">
-				<img src="img/items/item-1.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="1">
-				<img src="img/items/item-2.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="2">
-				<img src="img/items/item-3.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="2">
-				<img src="img/items/item-4.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-b" data-order="2">
-				<img src="img/items/item-5.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-a" data-order="3">
-				<img src="img/items/item-6.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
 
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
 
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="1">
-				<img src="img/items/item-2.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="2">
-				<img src="img/items/item-3.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="2">
-				<img src="img/items/item-4.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-b" data-order="2">
-				<img src="img/items/item-5.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="1">
-				<img src="img/items/item-1.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-a" data-order="3">
-				<img src="img/items/item-6.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
 
-			<a href="#" class="main-info__link mix category-a" data-order="1">
-				<img src="img/items/item-1.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="1">
-				<img src="img/items/item-2.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-a" data-order="2">
-				<img src="img/items/item-3.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-a" data-order="3">
-				<img src="img/items/item-6.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link main-info__link--white mix category-b" data-order="2">
-				<img src="img/items/item-4.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
-			<a href="#" class="main-info__link mix category-b" data-order="2">
-				<img src="img/items/item-5.jpg" alt="">
-				<p>
-					лендинг стоматологической клиники
-					<span>Top Smile</span>
-					<i class="i-icon-archive"></i>
-				</p>
-			</a>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг салона красоты</span>
+						<span class="item__name">M pro</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+						<i class="i-icon-archive item__icon"></i>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Лендинг стоматологической клиники</span>
+						<span class="item__name">Top Smile</span>
+					</span>
+				</a>
+			</div>
+			<div class="item item--white mix category-b">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">Магазин ортопедической обуви</span>
+						<span class="item__name">Саламат</span>
+					</span>
+				</a>
+			</div>
+			<div class="item mix category-a">
+				<a href="#" class="item__link">
+					<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+					<span class="item__text">
+						<span class="item__descr">сайт в разработке</span>
+						<span class="item__name">Speech Analytics</span>
+					</span>
+				</a>
+			</div>
+
 
 		</div>
+
 	</div>
 </section>
 

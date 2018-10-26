@@ -153,41 +153,31 @@ $(function () {
 
 
 /***********************
- Прокрутка к секциям BEGIN
- ***********************/
-$(function () {
-	$('.scrollto').on('click', function () {
-		var elementClick = $(this).attr("href");
-		var destination = $(elementClick).offset().top;
-		$('html,body').stop().animate({scrollTop: destination}, 1000);
-		return false;
-	});
-});
-/***********************
- Прокрутка к секциям END
- ***********************/
-
-
-/***********************
- Waypoints BEGIN
- ***********************/
-$(function () {
-	$('.anim').waypoint(function () {
-		$(this.element).toggleClass('animated');
-	}, {
-		offset: '85%'
-	});
-});
-/***********************
- Waypoints END
- ***********************/
-
-
-/***********************
 MixItUp BEGIN
 ***********************/
-$(document).ready(function() {
-	var mixer = mixitup('.main-info__body');
+$(function () {
+	$('.item__link').waypoint(function () {
+		$(this.element).toggleClass('show');
+		var thisImg = $(this.element).find('.item__img');
+		var src = thisImg.attr('data-src');
+		thisImg.attr('src',src);
+	}, {
+		offset: '100%'
+	});
+
+	var mixer = mixitup('.main-info__body',{
+		"animation": {
+			duration: 600,
+			effects: 'fade scale(0.2) stagger(25ms)',
+			clampHeight: false,
+			easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
+		},
+		callbacks: {
+			onMixEnd: function() {
+				Waypoint.refreshAll();
+			}
+		}
+	});
 });
 /***********************
 MixItUp END

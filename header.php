@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Упаковочка проекта</title>
+	<title>Упаковано</title>
 
 	<!-- favicons -->
 	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">

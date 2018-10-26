@@ -1,10 +1,10 @@
 .header-sec {
 	padding-top: 50px;
 	@include res(xl) {
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 	@include res(l) {
-		padding-top: 30px;
+		padding-top: 20px;
 	}
 }
 
@@ -47,6 +47,7 @@
 	max-width: 100%;
 	@include res(m) {
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
 
@@ -55,9 +56,17 @@
 	width: calc(100% / 3);
 	padding-right: 25px;
 	@include res(m) {
-		width: 50%;
+		width: auto;
 		margin-bottom: 15px;
-		padding-right: 0;
+		padding: 0 20px;
+	}
+	@include res(xs){
+		padding: 0;
+	}
+	&:first-child{
+		@include res(xs){
+			padding-right: 25px;
+		}
 	}
 	span {
 		display: block;
@@ -71,7 +80,7 @@
 			font-size: 14px;
 		}
 		@include res(xs) {
-			font-size: 13px;
+			font-size: 12px;
 		}
 		&+span {
 			padding-top: 10px;
