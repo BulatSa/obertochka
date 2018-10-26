@@ -162,15 +162,14 @@ $(function () {
 		var src = thisImg.attr('data-src');
 		thisImg.attr('src',src);
 	}, {
-		offset: '100%'
+		offset: '99%'
 	});
 
 	var mixer = mixitup('.main-info__body',{
 		"animation": {
 			duration: 600,
-			effects: 'fade scale(0.2) stagger(25ms)',
-			clampHeight: false,
-			easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
+			effects: 'fade scale(0.8) translateY(20%)',
+			clampHeight: false
 		},
 		callbacks: {
 			onMixEnd: function() {
@@ -178,6 +177,10 @@ $(function () {
 			}
 		}
 	});
+});
+
+$(window).on('load',function () {
+	Waypoint.refreshAll();
 });
 /***********************
 MixItUp END
