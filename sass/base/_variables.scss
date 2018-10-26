@@ -1,0 +1,17 @@
+$breakpoints: (
+	'xxl': (max-width: 1680px),
+	'xl': (max-width: 1480px),
+	'l': (max-width: 1280px),
+	'm': (max-width: 768px),
+	's': (max-width: 680px),
+	'xs': (max-width: 480px),
+	'xxs': (max-width: 375px),
+);
+
+$font: 'Gotham Pro', 'Helvetica Neue', Arial, sans-serif;
+
+$container_width: 1470px;
+
+$yellow: #eefe3b;
+
+$gutter: 10px;

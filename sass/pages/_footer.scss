@@ -1,0 +1,164 @@
+.footer-sec {
+	padding-bottom: 50px;
+	@include res(xl) {
+		padding-bottom: 40px;
+	}
+	@include res(l) {
+		padding-bottom: 30px;
+	}
+}
+
+.footer {}
+
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	@include res(l) {
+		padding-bottom: 30px;
+	}
+	@include res(m) {
+		flex-direction: column;
+	}
+}
+
+.footer__logo {
+	max-width: 280px;
+	width: 100%;
+	margin-right: auto;
+	padding-right: 35px;
+	@include res(l) {
+		max-width: 200px;
+	}
+	@include res(m) {
+		padding-bottom: 20px;
+	}
+	img {
+		display: block;
+		max-width: 215px;
+		width: 100%;
+	}
+}
+
+.footer__contact-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.footer__contact {
+	max-width: 245px;
+	width: calc(100% / 4);
+	padding-right: 25px;
+	@include res(l) {
+		width: 50%;
+		padding-bottom: 20px;
+	}
+	@include res(xs) {
+		width: 100%;
+		padding-right: 0;
+	}
+	span {
+		display: block;
+		font-size: 12px;
+	}
+	a {
+		font-size: 15px;
+		font-weight: bold;
+		white-space: nowrap;
+		&+span {
+			padding-top: 10px;
+		}
+	}
+}
+
+.footer__btn {
+	margin-left: auto;
+	@include res(m) {
+		margin-left: initial;
+	}
+}
+
+.footer__bottom {
+	display: flex;
+	@include res(m) {
+		flex-direction: column;
+	}
+}
+
+.footer__copy {
+	max-width: 245px;
+	width: 100%;
+	margin-right: auto;
+	font-size: 12px;
+	@include res(l) {
+		max-width: 270px;
+	}
+	span {
+		display: block;
+		padding-bottom: 20px;
+		@include res(m) {
+			padding-bottom: 10px;
+		}
+	}
+	a {
+		display: inline-block;
+		color: #0d73f4;
+		@include res(m) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.footer__descr {
+	padding-left: 35px;
+	padding-right: 25px;
+	font-size: 12px;
+	line-height: (19/12);
+	@include res(m) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.footer__soc {
+	max-width: 245px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-left: auto;
+	padding-left: 20px;
+	@include res(m) {
+		max-width: 100%;
+		justify-content: center;
+		margin-left: initial;
+		padding-bottom: 20px;
+		padding-left: 0;
+		order: -1;
+	}
+	a {
+		padding: 0 12px;
+		color: #000;
+		transition: all 0.3s ease;
+		&:hover {
+			transform: translate3d(0,-5px,0);
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+	.i-soc-vk {
+		font-size: 17px;
+	}
+	.i-soc-fb {
+		font-size: 20px;
+	}
+	.i-soc-you {
+		font-size: 20px;
+	}
+	.i-soc-insta-2 {
+		font-size: 21px;
+	}
+}

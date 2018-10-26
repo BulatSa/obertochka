@@ -1,0 +1,158 @@
+.header-sec {
+	padding-top: 50px;
+	@include res(xl) {
+		padding-top: 40px;
+	}
+	@include res(l) {
+		padding-top: 30px;
+	}
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	@include res(m) {
+		flex-direction: column;
+	}
+}
+
+.header__logo {
+	max-width: 350px;
+	width: 100%;
+	flex-shrink: 0;
+	margin-right: auto;
+	padding-right: 35px;
+	@include res(l) {
+		max-width: 280px;
+	}
+	@include res(m) {
+		max-width: 100%;
+		margin-bottom: 20px;
+		padding-right: 0;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		@include res(m) {
+			margin: 0 auto;
+		}
+	}
+}
+
+.header__contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 710px;
+	max-width: 100%;
+	@include res(m) {
+		flex-wrap: wrap;
+	}
+}
+
+.header__contact-phone {
+	max-width: 245px;
+	width: calc(100% / 3);
+	padding-right: 25px;
+	@include res(m) {
+		width: 50%;
+		margin-bottom: 15px;
+		padding-right: 0;
+	}
+	span {
+		display: block;
+		font-size: 12px;
+	}
+	a {
+		white-space: nowrap;
+		font-size: 15px;
+		font-weight: bold;
+		@include res(l) {
+			font-size: 14px;
+		}
+		@include res(xs) {
+			font-size: 13px;
+		}
+		&+span {
+			padding-top: 10px;
+		}
+	}
+}
+
+.header__contact-btn {
+	display: flex;
+	max-width: 230px;
+	width: calc(100% / 3);
+	@include res(m) {
+		max-width: 100%;
+		width: 100%;
+	}
+	.btn {
+		margin-left: auto;
+		@include res(m) {
+			margin-right: auto;
+		}
+	}
+}
+
+.burger {
+	display: none;
+	@include res(m) {
+		display: none;
+		margin: 0;
+		padding: 15px;
+		margin-left: -15px;
+		cursor: pointer;
+		font: inherit;
+		transition-timing-function: linear;
+		transition-duration: .15s;
+		transition-property: opacity,filter;
+		text-transform: none;
+		color: inherit;
+		border: 0;
+		background-color: transparent;
+		overflow: visible;
+	}
+	a {
+		position: relative;
+		display: inline-block;
+		width: 40px;
+		height: 24px;
+		span {
+			position: absolute;
+			width: 40px;
+			height: 4px;
+			transition-timing-function: ease;
+			transition-duration: .15s;
+			transition-property: transform;
+			border-radius: 4px;
+			background-color: #000;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 40px;
+				height: 4px;
+				top: 10px;
+				transition-timing-function: ease;
+				transition-duration: .15s;
+				transition-property: transform,opacity;
+				border-radius: 4px;
+				background-color: #000;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 20px;
+				display: block;
+				width: 40px;
+				height: 4px;
+				transition-timing-function: ease;
+				transition-duration: .15s;
+				transition-property: transform;
+				border-radius: 4px;
+				background-color: #000;
+			}
+		}
+	}
+}

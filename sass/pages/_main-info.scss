@@ -1,0 +1,165 @@
+.main-info-sec {
+	padding-top: 50px;
+	@include res(xl) {
+		padding-top: 40px;
+	}
+	@include res(l) {
+		padding-top: 30px;
+	}
+	@include res(m) {
+		padding-top: 20px;
+	}
+}
+
+.main-info {}
+
+.main-info__head {}
+
+.main-info__head-title {
+	max-width: 960px;
+	h1 {
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.1;
+		@include res(xl) {
+			font-size: 28px;
+		}
+		@include res(l) {
+			font-size: 24px;
+		}
+		@include res(m) {
+			font-size: 20px;
+		}
+		@include res(s) {
+			font-size: 16px;
+		}
+	}
+	span {
+		display: block;
+		font-size: 100px;
+		line-height: 1.2;
+		@include res(xl) {
+			font-size: 92px;
+		}
+		@include res(l) {
+			font-size: 72px;
+		}
+		@include res(m) {
+			font-size: 54px;
+		}
+		@include res(s) {
+			font-size: 36px;
+		}
+	}
+}
+
+.main-info__head-tags {
+	padding-top: 45px;
+	@include res(m) {
+		padding-top: 30px;
+	}
+	a {
+		display: inline-block;
+		margin-bottom: 12px;
+		margin-right: 5px;
+		padding: 5px 15px;
+		font-size: 12px;
+		border-radius: 15px;
+		background: #f2f3f4;
+		transition: all 0.3s ease;
+		&:hover {
+			background: #fff;
+			box-shadow: 0 0 4px 0 #000;
+		}
+		span {
+			padding-left: 4px;
+			color: #7e7e7e;
+		}
+		img {
+			position: relative;
+			top: 2px;
+			margin-right: 2px;
+		}
+		&.mixitup-control-active {
+			pointer-events: none;
+			background: #eefe3b;
+			span {
+				color: #899222;
+			}
+		}
+	}
+}
+
+.main-info__body {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	padding-bottom: 90px;
+	@include res(l) {
+		padding-bottom: 60px;
+	}
+	@include res(m) {
+		padding-bottom: 40px;
+	}
+}
+
+.main-info__link {
+	position: relative;
+	width: calc(100% / 6);
+	color: #000;
+	@include res(l) {
+		width: calc(100% / 5);
+	}
+	@include res(m) {
+		width: calc(100% / 3);
+	}
+	@include res(s) {
+		width: 50%;
+	}
+	&>img {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+	}
+	p {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 12% 5% 12% 12%;
+		font-size: 11px;
+		text-transform: uppercase;
+		z-index: 1;
+		@include res(l) {
+			font-size: 10px;
+		}
+		span {
+			display: block;
+			padding-bottom: 3px;
+			font-size: 2vw;
+			font-weight: bold;
+			line-height: 1;
+			@include res(xl) {
+				font-size: 2vw;
+			}
+			@include res(m) {
+				font-size: 2.5vw;
+			}
+			@include res(s) {
+				font-size: 4vw;
+			}
+		}
+	}
+	i {
+		font-size: 22px;
+		@include res(s) {
+			font-size: 20px;
+		}
+	}
+	&--white {
+		color: #fff;
+		p {
+			text-shadow: 0 0 20px transparentize(#000,0.5);
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.btn {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 35px;
+	font-size: 12px;
+	font-family: $font;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.3;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	user-select: none;
+	box-shadow: 0 0 0 2px #000;
+	border-radius: 25px;
+	background-color: #000;
+	transition: all 0.3s ease;
+	@include res(l) {
+		padding: 9px 25px;
+	}
+	@include res(m) {
+		padding: 8px 18px;
+	}
+	&:hover {
+		background: #fff;
+		//box-shadow: 0 0 0 1px #000;
+		color: #000;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}

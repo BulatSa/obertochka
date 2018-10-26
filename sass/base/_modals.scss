@@ -1,0 +1,36 @@
+.modal {
+	display: none;
+	width: 500px;
+	max-width: 100%;
+	will-change: transform, opacity;
+	overflow: visible !important;
+}
+
+.fancybox-slide--current {
+	.modal {
+
+	}
+}
+
+.fancybox-is-closing {
+	.modal {
+
+	}
+}
+
+.fancybox-bg {
+	background: #8c8e9a;
+}
+
+.fancybox-close-small, .fancybox-slide--image .fancybox-close-small, .fancybox-slide--video .fancybox-close-small, .fancybox-slide--iframe .fancybox-close-small,.fancybox-slide--html .fancybox-close-small {
+	@include cross();
+	opacity: 1;
+}
+
+.fancybox-slide--video {
+	padding: 40px 18px;
+}
+
+.fancybox-slide--iframe {
+	padding: 40px 18px;
+}
