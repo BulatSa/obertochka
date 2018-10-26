@@ -185,3 +185,52 @@ $(window).on('load',function () {
 /***********************
 MixItUp END
 ***********************/
+
+
+/***********************
+form BEGIN
+***********************/
+$(function($){
+	var siteWrap = $('.site-wrap');
+	var siteContent = $('.site-content');
+	var overlay = $('.site-wrap__overlay');
+	var scrollTop = window.pageYOffset;
+
+	$('.btn').on('click',function (e) {
+		e.preventDefault();
+		openForm();
+	});
+
+	console.log();
+
+	overlay.on('click',function () {
+		closeForm()
+	});
+
+	function openForm() {
+		var curWidth = document.documentElement.clientWidth;
+		var curHeight = document.documentElement.clientHeight;
+		scrollTop = window.pageYOffset;
+		siteContent.css('top',-window.pageYOffset);
+		siteWrap.css('width',curWidth);
+		siteWrap.css('height',curHeight);
+		siteWrap.addClass('opened');
+		siteWrap.addClass('transformed');
+		Waypoint.enableAll();
+	}
+
+	function closeForm() {
+		siteWrap.removeClass('transformed');
+		setTimeout(function () {
+			siteContent.css('top',0);
+			siteWrap.css('width','auto');
+			siteWrap.css('height','auto');
+			siteWrap.removeClass('opened');
+			Waypoint.refreshAll();
+			window.scrollTo(0,scrollTop);
+		},500)
+	}
+});
+/***********************
+form END
+***********************/
