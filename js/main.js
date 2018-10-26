@@ -168,7 +168,7 @@ $(function () {
 	var mixer = mixitup('.main-info__body',{
 		"animation": {
 			duration: 600,
-			effects: 'fade scale(0.8) translateY(20%)',
+			effects: 'fade scale(0.5) translateY(20%)',
 			clampHeight: false
 		},
 		callbacks: {
