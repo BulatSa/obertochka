@@ -156,24 +156,51 @@ $(function () {
 MixItUp BEGIN
 ***********************/
 $(function () {
+	var itemQueue = [];
+	var delay = 50;
+	var queueTimer;
+
+	function processItemQueue () {
+		if (queueTimer) return; // We're already processing the queue
+		queueTimer = window.setInterval(function () {
+			if (itemQueue.length) {
+				$(itemQueue.shift()).addClass('show');
+				processItemQueue()
+			} else {
+				window.clearInterval(queueTimer);
+				queueTimer = null
+			}
+		}, delay)
+	}
+
 	$('.item__link').waypoint(function () {
-		$(this.element).toggleClass('show');
-		var thisImg = $(this.element).find('.item__img');
-		var src = thisImg.attr('data-src');
-		thisImg.attr('src',src);
+		itemQueue.push(this.element);
+		processItemQueue()
 	}, {
-		offset: '99%'
+		offset: '90%'
 	});
+
 
 	var mixer = mixitup('.main-info__body',{
 		"animation": {
 			duration: 600,
-			effects: 'fade scale(0.5) translateY(20%)',
+			effects: 'translateY(20%)',
 			clampHeight: false
 		},
 		callbacks: {
-			onMixEnd: function() {
-				Waypoint.refreshAll();
+			onMixStart: function(state, futureState){
+				console.log(futureState);
+				var futureWays = $(futureState.show).find('.item__link');
+				$('.item__link').not(futureWays).removeClass('show');
+				Waypoint.destroyAll();
+			},
+			onMixEnd: function(ev) {
+				$(ev.show).find('.item__link').waypoint(function () {
+					itemQueue.push(this.element);
+					processItemQueue()
+				}, {
+					offset: '100%'
+				});
 			}
 		}
 	});
@@ -195,6 +222,7 @@ $(function($){
 	var siteContent = $('.site-content');
 	var overlay = $('.site-wrap__overlay');
 	var scrollTop = window.pageYOffset;
+	var isFormOpened = false;
 
 	$('.btn').on('click',function (e) {
 		e.preventDefault();
@@ -208,7 +236,9 @@ $(function($){
 	});
 
 	window.addEventListener('resize',function (ev) {
-		resizeFrame();
+		if (isFormOpened){
+			resizeFrame();
+		}
 	});
 
 	function openForm() {
@@ -218,6 +248,7 @@ $(function($){
 		siteWrap.addClass('opened');
 		siteWrap.addClass('transformed');
 		Waypoint.enableAll();
+		isFormOpened = true;
 	}
 
 	function closeForm() {
@@ -229,7 +260,8 @@ $(function($){
 			siteWrap.removeClass('opened');
 			Waypoint.refreshAll();
 			window.scrollTo(0,scrollTop);
-		},500)
+		},500);
+		isFormOpened = false;
 	}
 
 	function resizeFrame() {

@@ -71,7 +71,7 @@
 				<div class="main-info__body">
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -80,7 +80,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -89,7 +89,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
@@ -98,7 +98,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -107,7 +107,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -117,7 +117,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -127,7 +127,7 @@
 
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -136,7 +136,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -146,7 +146,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -155,7 +155,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -164,7 +164,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -173,7 +173,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
@@ -183,7 +183,7 @@
 
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -192,7 +192,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -201,7 +201,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
@@ -210,7 +210,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -219,7 +219,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -229,7 +229,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -239,7 +239,7 @@
 
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -248,7 +248,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -258,7 +258,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -267,7 +267,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -276,7 +276,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -285,7 +285,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
@@ -295,7 +295,7 @@
 
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -304,7 +304,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -313,7 +313,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
@@ -322,7 +322,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -331,7 +331,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -341,7 +341,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -351,7 +351,7 @@
 
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -360,7 +360,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -370,7 +370,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -379,7 +379,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -388,7 +388,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -397,7 +397,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
@@ -407,7 +407,7 @@
 
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -416,7 +416,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -425,7 +425,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
@@ -434,7 +434,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -443,7 +443,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -453,7 +453,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -463,7 +463,7 @@
 
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-4.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг салона красоты</span>
 								<span class="item__name">M pro</span>
@@ -472,7 +472,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-5.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -482,7 +482,7 @@
 					</div>
 					<div class="item item--white mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-6.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -491,7 +491,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-1.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Лендинг стоматологической клиники</span>
 								<span class="item__name">Top Smile</span>
@@ -500,7 +500,7 @@
 					</div>
 					<div class="item item--white mix category-b">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-2.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">Магазин ортопедической обуви</span>
 								<span class="item__name">Саламат</span>
@@ -509,7 +509,7 @@
 					</div>
 					<div class="item mix category-a">
 						<a href="#" class="item__link">
-							<img src="/img/thumb.png" data-src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
+							<img src="img/items/item-3.jpg" alt="Top Smile" class="item__img">
 							<span class="item__text">
 								<span class="item__descr">сайт в разработке</span>
 								<span class="item__name">Speech Analytics</span>
