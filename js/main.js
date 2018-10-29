@@ -177,33 +177,36 @@ $(function () {
 		itemQueue.push(this.element);
 		processItemQueue()
 	}, {
-		offset: '90%'
+		offset: '100%'
 	});
-
 
 	var mixer = mixitup('.main-info__body',{
 		"animation": {
 			duration: 600,
-			effects: 'translateY(20%)',
+			effects: 'fade translateY(20%)',
 			clampHeight: false
 		},
 		callbacks: {
 			onMixStart: function(state, futureState){
-				console.log(futureState);
-				var futureWays = $(futureState.show).find('.item__link');
-				$('.item__link').not(futureWays).removeClass('show');
+				var futureItems = $(futureState.show).find('.item__link');
+				$('.item__link').not(futureItems).removeClass('show');
 				Waypoint.destroyAll();
-			},
-			onMixEnd: function(ev) {
-				$(ev.show).find('.item__link').waypoint(function () {
-					itemQueue.push(this.element);
+				itemQueue = [];
+				futureItems.each(function () {
+					itemQueue.push(this);
+				});
+				$(futureItems).waypoint(function () {
 					processItemQueue()
 				}, {
 					offset: '100%'
 				});
+			},
+			onMixEnd: function() {
+				Waypoint.refreshAll();
 			}
 		}
 	});
+
 });
 
 $(window).on('load',function () {
