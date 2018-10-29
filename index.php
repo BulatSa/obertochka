@@ -580,7 +580,19 @@
 </main>
 
 <aside class="aside">
-
+	<div class="aside__content">
+		<form class="ajax-form form">
+			<p class="form__title">Обсудим проект</p>
+			<p class="form__descr">Для предметного разговора нам нужно узнать про&nbsp;ваш проект, пожалуйтса расскажите о&nbsp;нем:</p>
+			<p class="form__subtitle">Формат проекта:</p>
+			<div class="form__what">
+				<label class="style-checkbox">
+					<input type="radio" name="user_product" data-label="Продукт" value="Сайт">
+					<span>Сайт</span>
+				</label>
+			</div>
+		</form>
+	</div>
 </aside>
 
 <?php include('footer.php'); ?>

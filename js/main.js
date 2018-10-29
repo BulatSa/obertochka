@@ -207,13 +207,14 @@ $(function($){
 		closeForm()
 	});
 
+	window.addEventListener('resize',function (ev) {
+		resizeFrame();
+	});
+
 	function openForm() {
-		var curWidth = document.documentElement.clientWidth;
-		var curHeight = document.documentElement.clientHeight;
+		resizeFrame();
 		scrollTop = window.pageYOffset;
 		siteContent.css('top',-window.pageYOffset);
-		siteWrap.css('width',curWidth);
-		siteWrap.css('height',curHeight);
 		siteWrap.addClass('opened');
 		siteWrap.addClass('transformed');
 		Waypoint.enableAll();
@@ -229,6 +230,14 @@ $(function($){
 			Waypoint.refreshAll();
 			window.scrollTo(0,scrollTop);
 		},500)
+	}
+
+	function resizeFrame() {
+		var curScrollWidth = window.innerWidth - document.documentElement.clientWidth;
+		var curWidth = document.documentElement.clientWidth;
+		var curHeight = document.documentElement.clientHeight;
+		siteWrap.css('width',curWidth);
+		siteWrap.css('height',curHeight);
 	}
 });
 /***********************
