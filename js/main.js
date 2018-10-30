@@ -156,6 +156,7 @@ $(function () {
 MixItUp BEGIN
 ***********************/
 $(function () {
+	var items = $('.item');
 	var itemQueue = [];
 	var delay = 50;
 	var queueTimer;
@@ -168,12 +169,12 @@ $(function () {
 				processItemQueue()
 			} else {
 				window.clearInterval(queueTimer);
-				queueTimer = null
+				queueTimer = null;
 			}
 		}, delay)
 	}
 
-	$('.item__link').waypoint(function () {
+	items.waypoint(function () {
 		itemQueue.push(this.element);
 		processItemQueue()
 	}, {
@@ -183,26 +184,24 @@ $(function () {
 	var mixer = mixitup('.main-info__body',{
 		"animation": {
 			duration: 600,
-			effects: 'fade translateY(20%)',
+			effects: 'fade translateY(50px)',
 			clampHeight: false
 		},
 		callbacks: {
 			onMixStart: function(state, futureState){
-				var futureItems = $(futureState.show).find('.item__link');
-				$('.item__link').not(futureItems).removeClass('show');
+				var itemsToShow = $(futureState.show.slice(0, 12));
+				items.not(itemsToShow).removeClass('show');
+				itemsToShow.addClass('show');
 				Waypoint.destroyAll();
 				itemQueue = [];
-				futureItems.each(function () {
-					itemQueue.push(this);
-				});
-				$(futureItems).waypoint(function () {
+			},
+			onMixEnd: function(state) {
+				$(state.show).waypoint(function () {
+					itemQueue.push(this.element);
 					processItemQueue()
 				}, {
 					offset: '100%'
 				});
-			},
-			onMixEnd: function() {
-				Waypoint.refreshAll();
 			}
 		}
 	});
