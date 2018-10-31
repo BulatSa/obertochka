@@ -22,7 +22,7 @@
 							<a href="tel:+7 (495) 000-00-00">+7 (495) 000-00-00</a>
 						</div>
 						<div class="header__contact-btn">
-							<a href="#" class="btn">Обсудить проект</a>
+							<a href="#" class="btn js-open-form">Обсудить проект</a>
 						</div>
 					</div>
 				</div>
@@ -552,7 +552,7 @@
 							</div>
 						</div>
 						<div class="footer__btn">
-							<a href="#" class="btn">Обсудить проект</a>
+							<a href="#" class="btn js-open-form">Обсудить проект</a>
 						</div>
 					</div>
 					<div class="footer__bottom">
@@ -579,20 +579,75 @@
 	<div class="site-wrap__overlay"></div>
 </main>
 
+
 <aside class="aside">
 	<div class="aside__content">
 		<form class="ajax-form form">
 			<p class="form__title">Обсудим проект</p>
 			<p class="form__descr">Для предметного разговора нам нужно узнать про&nbsp;ваш проект, пожалуйтса расскажите о&nbsp;нем:</p>
+
 			<p class="form__subtitle">Формат проекта:</p>
 			<div class="form__what">
 				<label class="style-checkbox">
 					<input type="radio" name="user_product" data-label="Продукт" value="Сайт">
 					<span>Сайт</span>
 				</label>
+				<label class="style-checkbox">
+					<input type="radio" name="user_product" data-label="Продукт" value="Сайт">
+					<span>Лендинг</span>
+				</label>
+				<label class="style-checkbox">
+					<input type="radio" name="user_product" data-label="Продукт" value="Сайт">
+					<span>Магазин</span>
+				</label>
+				<label class="style-checkbox">
+					<input type="radio" name="user_product" data-label="Продукт" value="Сайт">
+					<span>Другое</span>
+				</label>
 			</div>
+
+			<p class="form__subtitle">Что нужно сделать?</p>
+			<label class="input">
+				<textarea name="user_comment" rows="2" class="input__text" data-label="Комментарий"></textarea>
+				<span class="input__label">Опишите задачу своими словами</span>
+			</label>
+
+			<p class="form__subtitle">Пару строк о вас:</p>
+
+			<label class="input">
+				<input type="text" name="user_name" data-label="Имя пользователя" class="input__text" >
+				<span class="input__label">Введите имя</span>
+			</label>
+			<label class="input">
+				<input type="tel" name="user_tel" data-label="Телефон"  class="input__text" data-req="true">
+				<span class="input__label">Введите телефон*</span>
+			</label>
+			<label class="input">
+				<input type="email" name="user_email" data-label="Email" class="input__text" data-req="true">
+				<span class="input__label">Введите email*</span>
+			</label>
+
+			<p class="form__note">Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="#">политики конфиденциальности</a></p>
+
+			<div class="form__footer">
+				<button type="submit" class="btn btn--blue">Отправить</button>
+
+				<label class="form__files">
+					<input type="file" id="user_files" name="user_files[]" multiple/>
+					<label for="user_files">
+						<strong>Прикрепить</strong>
+						<small>pdf, docx, pptx</small>
+						<img src="/img/pin.svg" alt="pin">
+						<span></span>
+					</label>
+				</label>
+			</div>
+
 		</form>
 	</div>
+
+	<div class="aside__close"></div>
 </aside>
+
 
 <?php include('footer.php'); ?>

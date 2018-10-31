@@ -9,32 +9,31 @@ $(function () {
 
 		$(this).find("[data-req='true']").each(function () {
 			if ($(this).val() === "") {
-				$(this).addClass('error');
+				$(this).parent('.input').addClass('error');
 				send = false;
 			}
 			if ($(this).is('select')) {
 				if ($(this).val() === null) {
-					$(this).addClass('error');
+					$(this).parent('.input').addClass('error');
 					send = false;
 				}
 			}
 			if ($(this).is('input[type="checkbox"]')) {
 				if ($(this).prop('checked') !== true) {
-					$(this).addClass('error');
+					$(this).parent('.input').addClass('error');
 					send = false;
 				}
 			}
 			if ($(this).is('input[type="tel"]')) {
-				console.log($(this).cleanVal().length);
 				if ($(this).cleanVal().length < 10) {
-					$(this).addClass('error');
+					$(this).parent('.input').addClass('error');
 					send = false;
 				}
 			}
 		});
 
 		$(this).find("[data-req='true']").on('focus', function () {
-			$(this).removeClass('error');
+			$(this).parent('.input').removeClass('error');
 		});
 
 		// empty file inputs fix for mac
@@ -153,15 +152,15 @@ $(function () {
 
 
 /***********************
-MixItUp BEGIN
-***********************/
+ MixItUp BEGIN
+ ***********************/
 $(function () {
 	var items = $('.item');
 	var itemQueue = [];
 	var delay = 50;
 	var queueTimer;
 
-	function processItemQueue () {
+	function processItemQueue() {
 		if (queueTimer) return; // We're already processing the queue
 		queueTimer = window.setInterval(function () {
 			if (itemQueue.length) {
@@ -181,21 +180,21 @@ $(function () {
 		offset: '100%'
 	});
 
-	var mixer = mixitup('.main-info__body',{
+	var mixer = mixitup('.main-info__body', {
 		"animation": {
 			duration: 600,
 			effects: 'fade translateY(50px)',
 			clampHeight: false
 		},
 		callbacks: {
-			onMixStart: function(state, futureState){
+			onMixStart: function (state, futureState) {
 				var itemsToShow = $(futureState.show.slice(0, 12));
 				items.not(itemsToShow).removeClass('show');
 				itemsToShow.addClass('show');
 				Waypoint.destroyAll();
 				itemQueue = [];
 			},
-			onMixEnd: function(state) {
+			onMixEnd: function (state) {
 				$(state.show).waypoint(function () {
 					itemQueue.push(this.element);
 					processItemQueue()
@@ -208,37 +207,41 @@ $(function () {
 
 });
 
-$(window).on('load',function () {
+$(window).on('load', function () {
 	Waypoint.refreshAll();
 });
 /***********************
-MixItUp END
-***********************/
+ MixItUp END
+ ***********************/
 
 
 /***********************
-form BEGIN
-***********************/
-$(function($){
+ form BEGIN
+ ***********************/
+$(function ($) {
 	var siteWrap = $('.site-wrap');
 	var siteContent = $('.site-content');
 	var overlay = $('.site-wrap__overlay');
 	var scrollTop = window.pageYOffset;
 	var isFormOpened = false;
 
-	$('.btn').on('click',function (e) {
+	$('.js-open-form').on('click', function (e) {
 		e.preventDefault();
 		openForm();
 	});
 
 	console.log();
 
-	overlay.on('click',function () {
+	overlay.on('click', function () {
 		closeForm()
 	});
 
-	window.addEventListener('resize',function (ev) {
-		if (isFormOpened){
+	$('.aside__close').on('click', function (e) {
+		closeForm();
+	});
+
+	window.addEventListener('resize', function (ev) {
+		if (isFormOpened) {
 			resizeFrame();
 		}
 	});
@@ -246,7 +249,7 @@ $(function($){
 	function openForm() {
 		resizeFrame();
 		scrollTop = window.pageYOffset;
-		siteContent.css('top',-window.pageYOffset);
+		siteContent.css('top', -window.pageYOffset);
 		siteWrap.addClass('opened');
 		siteWrap.addClass('transformed');
 		Waypoint.enableAll();
@@ -256,13 +259,13 @@ $(function($){
 	function closeForm() {
 		siteWrap.removeClass('transformed');
 		setTimeout(function () {
-			siteContent.css('top',0);
-			siteWrap.css('width','auto');
-			siteWrap.css('height','auto');
+			siteContent.css('top', 0);
+			siteWrap.css('width', 'auto');
+			siteWrap.css('height', 'auto');
 			siteWrap.removeClass('opened');
 			Waypoint.refreshAll();
-			window.scrollTo(0,scrollTop);
-		},500);
+			window.scrollTo(0, scrollTop);
+		}, 500);
 		isFormOpened = false;
 	}
 
@@ -270,10 +273,63 @@ $(function($){
 		var curScrollWidth = window.innerWidth - document.documentElement.clientWidth;
 		var curWidth = document.documentElement.clientWidth;
 		var curHeight = document.documentElement.clientHeight;
-		siteWrap.css('width',curWidth);
-		siteWrap.css('height',curHeight);
+		siteWrap.css('width', curWidth);
+		siteWrap.css('height', curHeight);
 	}
 });
 /***********************
-form END
-***********************/
+ form END
+ ***********************/
+
+/***********************
+ Labels BEGIN
+ ***********************/
+$(function ($) {
+	var inputs = $('.input__text');
+	inputs.on('focus', function () {
+		var thisInputWrap = $(this).parent('.input');
+		thisInputWrap.addClass('not_empty');
+		thisInputWrap.addClass('focused');
+	});
+
+	inputs.on('blur', function () {
+		var thisInputWrap = $(this).parent('.input');
+		thisInputWrap.removeClass('focused');
+		if ($(this).val() !== "") {
+			thisInputWrap.addClass('not_empty');
+		} else {
+			thisInputWrap.removeClass('not_empty');
+		}
+	});
+
+
+	$('.form__files').each(function () {
+		var
+			$input = $(this).find('input'),
+			$label = $input.next('label'),
+			$labelVal = $label.find('span');
+
+		$input.on('change', function (e) {
+			if (this.files.length > 0) {
+				var fileCount = this.files.length;
+				$labelVal.html(fileCount);
+				$labelVal.addClass('vis');
+			} else {
+				$labelVal.removeClass('vis');
+			}
+		});
+
+		// Firefox bug fix
+		$input
+			.on('focus', function () {
+				$input.addClass('has-focus');
+			})
+			.on('blur', function () {
+				$input.removeClass('has-focus');
+			});
+	});
+
+});
+/***********************
+ Labels END
+ ***********************/

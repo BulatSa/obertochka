@@ -18,6 +18,7 @@
 	border-radius: 25px;
 	background-color: #000;
 	transition: all 0.3s ease;
+	border: none;
 	@include res(l) {
 		padding: 11px 25px;
 	}
@@ -45,4 +46,16 @@
 button::-moz-focus-inner {
 	border: 0;
 	padding: 0;
+}
+
+.btn--blue{
+	background: $blue;
+	font-size: 15px;
+	padding: 14px 30px;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-transform: none;
+	@include res(xs){
+		padding: 14px 20px;
+	}
 }

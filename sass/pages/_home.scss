@@ -75,8 +75,10 @@ body{
 	width: 600px;
 	padding-top: 100px;
 	padding-left: 70px;
+	padding-bottom: 40px;
 	@include res(xl){
-		padding-top: 40px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	@include res(s){
 		width: 90%;
@@ -84,6 +86,25 @@ body{
 		padding-right: 20px;
 	}
 	@include res(xs){
-		padding-top: 30px;
+		padding-top: 20px;
+	}
+}
+
+.aside__close{
+	@include cross;
+	top: 10px;
+	right: 10px;
+	background: transparent;
+
+	&:hover{
+		background: transparent;
+
+		&:before,&:after{
+			background: $blue;
+		}
+	}
+	
+	&:before,&:after{
+		background: #000;
 	}
 }

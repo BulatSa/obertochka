@@ -30,6 +30,57 @@
 	font-size: 22px;
 	font-weight: bold;
 	line-height: 1.1;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	margin-top: 20px;
+	@include res(xl){
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	@include res(xs){
+		font-size: 18px;
+	}
+}
+
+
+.form__what{
+	display: flex;
+	flex-wrap: wrap;
+
+	.style-checkbox{
+		margin: 0 10px 10px 0;
+		@include res(xs){
+			margin: 0 5px 5px 0;
+		}
+	}
+}
+
+
+.form__note{
+	font-size: 11px;
+	color: $gray;
+	margin-top: 25px;
+	@include res(xl){
+		margin-top: 10px;
+		font-size: 8px;
+	}
+
+	a{
+		color: $blue;
+		transition: color 0.3s ease;
+
+		&:hover{
+			color: #000;
+		}
+	}
+}
+
+
+.form__footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+	@include res(xl){
+		margin-top: 10px;
+	}
 }
